@@ -1,0 +1,10 @@
+version: '3.3'
+
+services:
+  httpd:
+    container_name: httpd
+    image: httpd:latest
+    volumes:
+      - ./website:/usr/local/apache2/htdocs
+    ports:
+      - "80:80"
